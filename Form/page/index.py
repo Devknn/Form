@@ -23,13 +23,11 @@ def index() -> rx.Component:
                             rx.input(
                                 placeholder="Nombre",
                                 name="nombre",
-                                color_scheme="teal",
                                 width="50%"
                                 ),
                             rx.input(
                                 placeholder="Apellidos",
                                 name="apellidos",
-                                color_scheme="teal",
                                 width="50%"
                                 ),
                             width="100%",
@@ -39,12 +37,10 @@ def index() -> rx.Component:
                             rx.select(
                                 ["DNI","NIE","PASSAPORTE"],
                                 default_value="DNI",
-                                color_scheme="teal",
                                 width=EmSize.VERY_BIG.value
                                 ),
                             rx.input(
                                 placeholder="Ingrese documento", 
-                                color_scheme="teal",
                                 margin_left=EmSize.SMALL.value,
                                 min_length=4,
                                 max_length=20,
@@ -56,12 +52,10 @@ def index() -> rx.Component:
                             rx.select(
                                 ["MOVIL","CASA"],
                                 default_value="MOVIL",
-                                color_scheme="teal",
                                 width=EmSize.VERY_BIG.value,
                                 ),                         
                             rx.input(
                                 placeholder="Ingrese telefono", 
-                                color_scheme="teal",
                                 margin_left=EmSize.SMALL.value,
                                 min_length=4,
                                 max_length=20
@@ -71,7 +65,6 @@ def index() -> rx.Component:
                             ),
                         rx.input(
                             placeholder="Correo electronico",
-                            color_scheme="teal",
                             margin_y=EmSize.DEFAULT.value,
                             width="100%"
                             ),
@@ -88,8 +81,7 @@ def index() -> rx.Component:
                                             rx.spacer(),
                                             rx.divider(
                                                 orientation="vertical", 
-                                                size="2", 
-                                                color_scheme="teal"
+                                                size="2"
                                                 ),
                                             rx.spacer(),
                                             rx.input(
@@ -111,7 +103,6 @@ def index() -> rx.Component:
                                             )
                                         )
                                     ),
-                                    color_scheme="teal",
                                     variant="ghost",
                                     collapsible=True,
                                     width="100%",
@@ -120,14 +111,12 @@ def index() -> rx.Component:
                         rx.checkbox(
                             "Aceptar termino y codinciones",
                             default_checked=True,
-                            spacing="2",
-                            color_scheme="teal"                
+                            spacing="2"
                             ),
                          rx.center(
                             rx.button(
                                 "Registrar",
-                                color_scheme="teal"
-                                ), 
+                            ), 
                             width="100%",
                             margin_y=EmSize.BIG.value
                             )
